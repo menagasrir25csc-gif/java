@@ -1,5 +1,5 @@
-public class day7 {
-    static class Request{
+/*public class day7 {
+    /*static class Request{
         String name;
         String date;
         String reason;
@@ -49,4 +49,43 @@ public class day7 {
         OnDutyRequest onDutyRequest = new OnDutyRequest("Menaga","11.07.2026","Culturals");
         onDutyRequest.rejectOnDutyRequest();
     }
-}
+}*/
+
+
+  public class day7 {
+      static class payment {
+          String amount;
+          void transfer() {
+              System.out.println("payment successful");
+          }
+          static class UPIpayment extends payment{
+              @Override
+              void transfer() {
+                  System.out.println("UPI payment ");
+              }
+          }
+          static class Cardpayment extends payment{
+              @Override
+              void transfer() {
+                  System.out.println("Card payment");
+              }
+          }
+          static class NBpayment extends payment{
+              @Override
+              void transfer() {
+                  System.out.println("NB payment ");
+              }
+          }
+          static void main (){
+              UPIpayment UPIpayment=new UPIpayment();
+              UPIpayment.transfer();
+              Cardpayment Cardpayment=new Cardpayment();
+              Cardpayment.transfer();
+              NBpayment NBpayment=new NBpayment();
+              NBpayment.transfer();
+       }
+      }
+  }
+
+
+
