@@ -51,7 +51,7 @@ public static void main(String[] args) {
 }
 }*/
 
-public class day6 {
+public class  day6 {
     static class Students{
         String name;
         int regNo;
