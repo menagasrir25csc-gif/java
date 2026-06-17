@@ -78,7 +78,7 @@ public class day10 {
         updateStudent(students);
         System.out.println("\nStudent Details");
         for (Student s : students) {
-            System.out.println(s.name + " " + s.regNo + " " + s.marks);
+            System.out.println(s.name + "  " + s.regNo + "  " + s.marks);
         }
     }
 }
