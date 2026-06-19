@@ -29,7 +29,7 @@ public class day11 {
         Mark.put("ramesh",100);
         System.out.println(Mark.get("ravi"));
         Mark.entrySet().forEach(entry ->{
-            System.out.println(entry.getKey() + " : " + entry.getValue());
+            System.out.println(entry.getKey() + " :    " + entry.getValue());
         });
     }
 }
